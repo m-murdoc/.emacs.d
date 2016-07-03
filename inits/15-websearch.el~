@@ -1,0 +1,12 @@
+(el-get-bundle search-web)
+(require serch-web)
+
+;; google
+(define-key global-map (kbd "C-c C-s g") (lambda () (interactive) (search-web-at-point "g")))
+(define-key global-map (kbd "C-c C-s C-g") (lambda () (interactive) (search-web-region "g")))
+;; 英辞郎
+(define-key global-map (kbd "C-c C-s e") (lambda () (interactive) (search-web-at-point "eow")))
+(define-key global-map (kbd "C-c C-s C-e") (lambda () (interactive) (search-web-region "eow")))
+;; AMAZON
+(define-key global-map (kbd "C-c C-s z") (lambda () (interactive) (search-web-at-point "zj")))
+(define-key global-map (kbd "C-c C-s C-z") (lambda () (interactive) (search-web-region "zj")))
