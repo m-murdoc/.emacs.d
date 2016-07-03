@@ -131,7 +131,7 @@ This is particularly useful under Mac OSX, where GUI apps are not started from a
   ;; ログファイルを表示する
   ;; (set init-loader-show-log-after-init t)
   ;; ログファイルを表示しない
-   (set init-loader-show-log-after-init 'error-only)
+  ;; (set init-loader-show-log-after-init 'error-only)
   ;; バイトコンパイルをする
   (setq init-loader-byte-compile t)
     ;; バイトコンパイルをしない
